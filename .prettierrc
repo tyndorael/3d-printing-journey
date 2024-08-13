@@ -1,0 +1,6 @@
+{
+  "singleQuote": true,
+  "bracketSameLine": true,
+  "tabWidth": 2,
+  "endOfLine": "auto"
+}
