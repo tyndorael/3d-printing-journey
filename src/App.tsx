@@ -1,11 +1,11 @@
-import Landing from './components/Landing/Landing';
+import Sidebar from './components/Sidebar/Sidebar';
 
 import './App.css';
 
 function App() {
   return (
     <>
-      <Landing />
+      <Sidebar />
     </>
   );
 }
