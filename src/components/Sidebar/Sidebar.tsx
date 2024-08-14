@@ -1,4 +1,4 @@
-import { useContext, createContext, useState, ReactNode } from 'react';
+import { useContext, createContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ImCross, ImEnlarge2 } from 'react-icons/im';
 
@@ -6,11 +6,11 @@ import schwarzAvatar from '../../assets/Schwarz.jpg';
 
 const SidebarContext = createContext(false);
 
-type Sidebar = {
+type SidebarType = {
   children: React.ReactNode;
 };
 
-export default function Sidebar({ children }: Sidebar) {
+export default function Sidebar({ children }: SidebarType) {
   const [expanded, setExpanded] = useState(true);
 
   return (

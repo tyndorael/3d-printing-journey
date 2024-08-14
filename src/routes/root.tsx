@@ -1,7 +1,6 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Sidebar, { SidebarItem } from '../components/Sidebar/Sidebar';
-import { BiArea, BiPrinter } from 'react-icons/bi';
-import { IoSave } from 'react-icons/io5';
+import { BiPrinter } from 'react-icons/bi';
 
 export default function Root() {
   return (
@@ -11,7 +10,7 @@ export default function Root() {
           icon={<BiPrinter size={20} />}
           text="Printer"
           active={false}
-          alert={undefined}
+          alert={false}
           to={'printer'}
         />
       </Sidebar>
