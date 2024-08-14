@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/root';
 import ErrorPage from './error-page';
 import './index.css';
-import Contact from './routes/contact';
+import Printer from './routes/printer';
 
 const router = createBrowserRouter(
   [
@@ -14,8 +14,8 @@ const router = createBrowserRouter(
       errorElement: <ErrorPage />,
       children: [
         {
-          path: 'contacts/:contactId',
-          element: <Contact />,
+          path: 'printer',
+          element: <Printer />,
         },
       ],
     },
