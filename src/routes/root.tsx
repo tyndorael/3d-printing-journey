@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar, { SidebarItem } from '../components/Sidebar/Sidebar';
-import { BiPrinter } from 'react-icons/bi';
+import { BiPrinter, BiTestTube } from 'react-icons/bi';
 
 export default function Root() {
   return (
@@ -12,6 +12,13 @@ export default function Root() {
           active={false}
           alert={false}
           to={'printer'}
+        />
+        <SidebarItem
+          icon={<BiTestTube size={20} />}
+          text="Calibrations"
+          active={false}
+          alert={false}
+          to={'calibrations'}
         />
       </Sidebar>
       <div id="detail">

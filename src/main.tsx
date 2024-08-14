@@ -5,6 +5,7 @@ import Root from './routes/root';
 import ErrorPage from './error-page';
 import './index.css';
 import Printer from './routes/printer';
+import Calibrations from './routes/calibrations';
 
 const router = createBrowserRouter(
   [
@@ -16,6 +17,10 @@ const router = createBrowserRouter(
         {
           path: 'printer',
           element: <Printer />,
+        },
+        {
+          path: 'calibrations',
+          element: <Calibrations />,
         },
       ],
     },
